@@ -379,3 +379,20 @@ opacity: 1;
 footer{
     color: var(--text);
 }
+
+
+
+.about, .skills, .education ,.edubox, .pro, .contact{
+    animation: fade linear forwards;
+    animation-timeline: view();
+    animation-range-end: 500px;
+    animation-range-start: 200px;
+    opacity: 0.3;
+    scale: 0.4;
+}
+@keyframes fade {
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
